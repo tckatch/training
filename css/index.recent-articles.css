@@ -1,6 +1,7 @@
 .recent-articles {
   padding: 90px 0;
   background-color: var(--color-accent);
+
 }
 
 .recent-articles__title {
@@ -22,29 +23,27 @@
   width: 100%;
   max-width: 371px;
   overflow: hidden;
+  margin: 25px 0;
 }
 
 .recent-articles__image {
   display: block;
   width: 100%;
   height: auto;
-}
+ }
 
 .recent-articles__text-overlay {
   position: absolute;
   left: 10px;
   right: 10px;
   bottom: 10px;
-  background-color: rgba(0, 0, 0, 0.6);
   color: white;
   padding: 10px;
-  font-size: 16px;
+  font-size: 22px;
   line-height: 1.4;
   border-radius: 5px;
   z-index: 1;
 }
-
-/* Коли потрібно, щоб текст був по центру зображення */
 .recent-articles__text-overlay.center {
   top: 50%;
   left: 50%;
@@ -52,3 +51,15 @@
   bottom: auto;
   right: auto;
   text-align: center;}
+  
+  .recent-articles__link {
+  display: inline-block;
+  margin-top: 0.8rem;
+  color: #f9c649;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 14px;
+  ;
+}
+
