@@ -1,8 +1,8 @@
 .recent-articles {
   padding: 90px 0;
   background-color: var(--color-accent);
-
 }
+
 
 .recent-articles__title {
   text-align: center;
@@ -17,6 +17,12 @@
   font-size: 19px;
   margin-bottom: 48px;
 }
+.recent-articles__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  
+
+
 .recent-articles__image-wrapper {
   position: relative;
   display: inline-block;
@@ -30,7 +36,7 @@
   display: block;
   width: 100%;
   height: auto;
- }
+}
 
 .recent-articles__text-overlay {
   position: absolute;
@@ -44,15 +50,17 @@
   border-radius: 5px;
   z-index: 1;
 }
+
 .recent-articles__text-overlay.center {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   bottom: auto;
   right: auto;
-  text-align: center;}
-  
-  .recent-articles__link {
+  text-align: left;
+}
+
+.recent-articles__link {
   display: inline-block;
   margin-top: 0.8rem;
   color: #f9c649;
@@ -60,6 +68,6 @@
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: 14px;
-  ;
-}
 
+}
+}
